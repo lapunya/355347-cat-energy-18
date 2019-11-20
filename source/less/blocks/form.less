@@ -1,0 +1,119 @@
+.form__container {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding-bottom: 36px;
+}
+
+.form__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.form__fieldset {
+  border: none;
+  border-bottom: 1px solid #ededed;
+  padding: 20px;
+  display: flex;
+}
+
+.form__input-box {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.form__text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-transform: uppercase;
+  flex-grow: 2;
+}
+
+.form__label--radio {
+  margin-bottom: 29px;
+}
+
+.form__radio {
+  opacity: 0;
+  position: absolute;
+  width: 1;
+  height: 1;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+  position: relative;
+  &::after {
+    content: '';
+    width: 99px;
+    height: 3px;
+    background-color: #68b738;
+    position: absolute;
+    top: 14px;
+    right: -22px;
+  }
+}
+
+.form__title--comment {
+  &::after {
+    width: 158px;
+    right: -174px;
+  }
+}
+
+.form__title--extra {
+  &::after {
+    width: 136px;
+    right: -154px;
+  }
+}
+
+.form__label--check {
+  margin-bottom: 29px;
+}
+
+.form__check {
+  opacity: 0;
+  position: absolute;
+  width: 1;
+  height: 1;
+}
+
+.form__submit {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68b738;
+  padding: 12px 60px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.form__footnote {
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: tomato;
+  font-family: 'Oswald', 'Arial', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+@import "blocks/header.less";
+@import "blocks/nav.less";
+@import "blocks/intro.less";
+@import "blocks/program.less";
+@import "blocks/advantage.less";
+@import "blocks/example.less";
+@import "blocks/footer.less";
+@import "blocks/catalog.less";
+@import "blocks/extra.less";
+@import "blocks/form.less";
