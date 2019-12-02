@@ -1,7 +1,38 @@
 .header__container {
   width: 320px;
   margin: 0 auto;
+  padding-top: 11px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 12px;
   background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__toggle {
+
+  width: 24px;
+  height: 2px;
+  background-color: #222222;
+  border: none;
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: #222222;
+    position: absolute;
+    top: -8px;
+    left: 0;
+  }
+  &::after {
+    top: 8px;
+  }
 }
