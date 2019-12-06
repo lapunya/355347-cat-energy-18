@@ -22,3 +22,23 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .nav {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #222222;
+  }
+}

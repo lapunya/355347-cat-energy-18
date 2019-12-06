@@ -16,11 +16,11 @@
 }
 
 .header__toggle {
-
   width: 24px;
   height: 2px;
   background-color: #222222;
   border: none;
+  padding: 0;
   position: relative;
   &::before,
   &::after {
@@ -34,5 +34,23 @@
   }
   &::after {
     top: 8px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header__container {
+    width: 768px;
+    margin: 0 auto;
+    border-bottom: none;
+    display: flex;
+    padding: 30px;
+  }
+
+  .header__top {
+    margin-right: 98px;
+  }
+
+  .header__toggle {
+    display: none;
   }
 }

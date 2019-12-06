@@ -85,3 +85,60 @@
   margin-top: 34px;
   width: 100%;
 }
+
+@media (min-width: @tablet-width) {
+  .example__container {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    margin-bottom: 72px;
+  }
+
+  .example__result {
+    align-items: center;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 57px;
+  }
+
+  .example__indicator {
+    width: 164px;
+    &:first-child {
+      margin-right: 41px;
+    }
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__definition {
+    font-size: 14px;
+    line-height: 14px;
+    width: auto;
+    padding: 0 9px;
+    bottom: -6px;
+    left: 24px;
+  }
+
+  .example__definition--time {
+    left: 10px;
+  }
+
+  .example__cost {
+    font-size: 20px;
+    width: 175px;
+    text-align: right;
+    margin-top: 0;
+    margin-left: auto;
+  }
+}

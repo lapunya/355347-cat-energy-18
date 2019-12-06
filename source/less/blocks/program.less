@@ -93,3 +93,53 @@
     right: -35px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .program__container {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .program__type {
+    padding-left: 53px;
+  }
+
+  .program__title {
+    font-size: 36px;
+    padding-left: 0;
+    &::before {
+      width: 200px;
+      height: 200px;
+      left: 405px;
+    }
+    &::after {
+      width: 140px;
+      height: 195px;
+      left: 440px;
+    }
+  }
+
+  .program__title--pro {
+  &::after {
+  background-image: url('../../img/icon-cat-pro.svg');
+    width: 269px;
+    left: 370px;
+    top: 35px;
+  }
+}
+
+  .program__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    border-bottom: none;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+}
