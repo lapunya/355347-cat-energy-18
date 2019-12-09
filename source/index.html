@@ -15,7 +15,10 @@
     <div class="header__container">
       <div class="header__top">
         <a class="header__logo">
-          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип сайта">
+         <picture>
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип сайта">
+          </picture>
         </a>
         <button class="header__toggle" type="button"></button>
       </div>
@@ -33,7 +36,7 @@
       <div class="intro__container">
         <h1 class="intro__title">Функциональное питание для котов</h1>
         <p class="intro__description">Занялся собой? Займись котом!</p>
-        <picture>
+        <picture class="intro__pic">
           <source srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px)">
           <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Корм">
         </picture>

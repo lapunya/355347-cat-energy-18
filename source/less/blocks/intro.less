@@ -56,8 +56,11 @@
     background-image: none;
     width: 768px;
     margin: 0 auto;
-    padding-left: 90px;
+    padding-top: 29px;
+    padding-left: 119px;
     padding-right: 132px;
+    display: flex;
+    flex-direction: column;
   }
 
   .intro__title {
@@ -66,7 +69,7 @@
     font-weight: 400;
     color: #111111;
     text-align: left;
-    margin-bottom: 46px;
+    margin-bottom: 41px;
   }
 
   .intro__description {
@@ -75,13 +78,30 @@
     font-weight: 400;
     color: #111111;
     text-align: left;
+    margin-bottom: 48px;
+  }
+  
+  .intro__pic {
+    order: 4;
+  }
+  
+  .intro__image {
+    width: 709px;
+    height: 609px;
+    position: relative;
+    left: -90px;
+    top: -80px;
   }
 
   .intro__link {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 27px;
+    padding-top: 15px;
     padding-right: 27px;
-    display: inline;
+    padding-bottom: 17px;
+    padding-left: 27px;
+    width: 245px;
+    z-index: 2;
+    order: 3
   }
 }
