@@ -30,7 +30,8 @@
   margin-bottom: 29px;
   padding-left: 71px;
   position: relative;
-    &::before {
+
+  &::before {
     content: '';
     width: 50px;
     height: 50px;
@@ -40,7 +41,8 @@
     top: -6px;
     left: 2px;
   }
-    &::after {
+
+  &::after {
     content: '';
     background-image: url('../../img/icon-cat-slim.svg');
     background-repeat: no-repeat;
@@ -54,7 +56,7 @@
 
 .program__title--pro {
   &::after {
-  background-image: url('../../img/icon-cat-pro.svg');
+    background-image: url('../../img/icon-cat-pro.svg');
     width: 68px;
     top: 4px;
     left: -7px;
@@ -82,6 +84,7 @@
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
+
   &::after {
     content: '';
     width: 24px;
@@ -98,48 +101,82 @@
   .program__container {
     width: 768px;
     margin: 0 auto;
+    padding-top: 0;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   .program__type {
+    padding-top: 76px;
+    padding-bottom: 58px;
     padding-left: 53px;
+    margin-bottom: 30px;
   }
 
   .program__title {
     font-size: 36px;
     padding-left: 0;
+    margin-bottom: 25px;
+
     &::before {
       width: 200px;
       height: 200px;
-      left: 405px;
+      top: 16px;
+      left: 393px;
     }
+
     &::after {
       width: 140px;
       height: 195px;
-      left: 440px;
+      top: 4px;
+      left: 423px;
     }
   }
 
   .program__title--pro {
-  &::after {
-  background-image: url('../../img/icon-cat-pro.svg');
-    width: 269px;
-    left: 370px;
-    top: 35px;
+    &::before {
+      top: 15px;
+      left: 395px;
+    }
+
+    &::after {
+      width: 268px;
+      left: 359px;
+      top: 59px;
+    }
   }
-}
 
   .program__description {
     font-size: 16px;
     line-height: 24px;
-    width: 340px;
+    width: 380px;
+    padding-bottom: 0;
+    margin-bottom: 56px;
     border-bottom: none;
+  }
+
+  .program__type--pro {
+    margin-bottom: 0;
+  }
+
+  .program__description--pro {
+    width: 340px;
   }
 
   .program__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      top: 10px;
+      right: -48px;
+    }
   }
 
+
+  .program__link--pro {
+    &::after {
+      right: -46px;
+    }
+  }
 }

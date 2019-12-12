@@ -15,7 +15,10 @@
     <div class="header__container">
       <div class="header__top">
         <a class="header__logo">
-          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип сайта">
+          <picture>
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип сайта">
+          </picture>
         </a>
         <button class="header__toggle" type="button"></button>
       </div>
@@ -34,7 +37,12 @@
       <div class="catalog__container">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a class="catalog__link" href=""><img class="catalog__link-image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Курица 500г"></a>
+            <a class="catalog__link" href="">
+            <picture>
+            <source srcset="img/chicken-small-tablet@1x.png" media="(min-width: 768px)">
+            <img class="catalog__link-image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Курица 500г">
+            </picture>
+            </a>
             <div class="catalog__info">
               <h3 class="catalog__title">
                 <a class="catalog__link-text" href="">
