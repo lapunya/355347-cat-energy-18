@@ -85,6 +85,7 @@
   position: relative;
   display: block;
   padding-top: 79px;
+
   &::before {
     content: '';
     position: absolute;
@@ -94,6 +95,7 @@
     height: 30px;
     background-color: #d3d3d3;
   }
+
   &::after {
     content: '';
     position: absolute;
@@ -163,7 +165,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 135px;
+    padding-top: 136px;
   }
 
   .catalog__item {
@@ -171,22 +173,33 @@
     margin-bottom: 140px;
     padding: 0;
     flex-direction: column;
-    align-content: stretch;
     background-color: #f2f2f2;
+    border: none;
+
     &:last-child,
     &:nth-last-child(2) {
       margin-bottom: 0;
     }
-  }
 
-  .catalog__link {
-    position: relative;
-    top: -46px;
-  }
-  
-  .catalog__link-image {
-    width: 324px;
-    height: 172px;
+    &:nth-child(odd) .catalog__link-image {
+      width: 324px;
+      height: 172px;
+    }
+
+    &:nth-child(even) .catalog__link-image {
+      width: 324px;
+      height: 208px;
+    }
+
+    &:nth-child(odd) .catalog__link {
+      position: relative;
+      top: -46px;
+    }
+
+    &:nth-child(even) .catalog__link {
+      position: relative;
+      top: -82px;
+    }
   }
 
   .catalog__info {
@@ -195,7 +208,7 @@
     padding-right: 36px;
     padding-left: 39px;
   }
-  
+
   .catalog__title {
     width: 132px;
     margin: 0 auto;
@@ -226,7 +239,7 @@
   .catalog__link-book {
     width: auto;
     margin-right: 37px;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     margin-left: 38px;
   }
 
@@ -234,11 +247,13 @@
     padding-top: 165px;
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
+
     &::before {
       height: 60px;
       top: 55px;
       left: 162px;
     }
+
     &::after {
       width: 60px;
       top: 84px;
@@ -253,7 +268,7 @@
     margin: 0 auto;
     margin-bottom: 26px;
   }
-  
+
   .catalog__description {
     font-size: 16px;
     line-height: 18px;
@@ -261,11 +276,11 @@
     margin: 0 auto;
     margin-bottom: 85px;
   }
-  
+
   .catalog__link-all {
     width: auto;
     margin-right: 37px;
     margin-left: 38px;
   }
-  
+
 }
