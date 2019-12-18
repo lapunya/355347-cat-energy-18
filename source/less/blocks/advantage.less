@@ -141,3 +141,28 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .advantage__container {
+    width: 1300px;
+    padding-top: 73px;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px;
+  }
+
+  .advantage__item {
+    margin-bottom: 0;
+    &:nth-child(odd) {
+      flex-grow: 0;
+      margin-right: 80px;
+    }
+    &:nth-child(even) {
+      margin-right: 80px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+}

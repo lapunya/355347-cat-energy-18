@@ -180,3 +180,54 @@
     }
   }
 }
+
+
+@media (min-width: @desktop-width) {
+  .program__container {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .program__type {
+    padding-right: 52px;
+    margin-bottom: 0;
+  }
+
+  .program__title {
+    margin-bottom: 74px;
+    margin-left: 161px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: -29px;
+      left: -162px;
+    }
+
+    &::after {
+      width: 70px;
+      height: 100px;
+      top: -35px;
+      left: -148px;
+    }
+  }
+
+  .program__title--pro {
+    &::after {
+      width: 134px;
+      top: -7px;
+      left: -180px;
+    }
+
+  }
+
+  .program__description {
+    width: 465px;
+    margin-bottom: 31px;
+  }
+
+}
