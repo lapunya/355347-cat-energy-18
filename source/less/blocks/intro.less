@@ -2,9 +2,10 @@
   background-image: url('../../img/index-background-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-color: #ffffff;
-  width: 320px;
+  background-size: 100% 305px;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 26px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -15,7 +16,7 @@
   font-weight: 400;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   text-align: center;
 }
 
@@ -27,12 +28,13 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .intro__image {
   display: block;
   margin: 0 auto;
+  margin-bottom: 3px;
 }
 
 .intro__link {
@@ -47,4 +49,100 @@
   text-align: center;
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro__container {
+    background-image: none;
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 29px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #111111;
+    text-align: left;
+    margin-bottom: 41px;
+    margin-left: 88px;
+  }
+
+  .intro__description {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #111111;
+    text-align: left;
+    margin-bottom: 48px;
+    margin-left: 88px;
+  }
+
+  .intro__pic {
+    order: 4;
+    margin-top: -80px;
+  }
+
+  .intro__image {
+    width: 709px;
+    height: 609px;
+    margin-bottom: 0;
+  }
+
+  .intro__link {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 88px;
+    padding-top: 15px;
+    padding-right: 27px;
+    padding-bottom: 17px;
+    padding-left: 27px;
+    width: 245px;
+    z-index: 2;
+    order: 3
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__container {
+    width: 100%;
+    margin-top: -125px;
+    padding-top: 223px;
+    padding-bottom: 188px;
+    background-image: url('../../img/index-background-desktop@1x.jpg');
+    background-size: 720px 100%;
+    background-position: right -45px top;
+  }
+
+  .intro__title {
+    width: 425px;
+    margin-left: 115px;
+  }
+  
+  .intro__description {
+    margin-left: 115px;
+    margin-bottom: 53px;
+  }
+  
+  .intro__pic {
+    position: absolute;
+    left: 515px;
+    top: 142px;
+    margin-top: 0;
+  }
+  
+  .intro__link {
+    margin-left: 115px;
+  }
+  
+  .intro__image {
+    width: 552px;
+    height: 499px;
+    margin-bottom: 0;
+  }
 }

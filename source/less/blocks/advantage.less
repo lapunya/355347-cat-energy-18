@@ -1,10 +1,10 @@
 .advantage__container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 17px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   background-color: #ffffff;
 }
 
@@ -25,7 +25,7 @@
 
 .advantage__item {
   padding-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .advantage__description {
@@ -34,14 +34,16 @@
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+  margin: 0;
   position: relative;
+
   &::before {
     content: '';
     background-color: #68b738;
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 0;
+    top: -2px;
     left: -80px;
     background-image: url('../../img/advantage-leaf@1x.png');
     background-repeat: no-repeat;
@@ -65,4 +67,102 @@
   &::before {
     background-image: url('../../img/advantage-clock@1x.png');
   }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__container {
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-bottom: 49px;
+    padding-right: 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .advantage__title {
+    font-size: 60px;
+    margin-bottom: 74px;
+  }
+
+  .advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: advantage;
+  }
+
+  .advantage__item {
+    padding-top: 110px;
+    padding-bottom: 53px;
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 82px;
+    position: relative;
+
+    &:nth-child(odd) {
+      flex-grow: 1.4;
+      margin-right: 30px;
+    }
+
+    &:nth-child(even) {
+      flex-grow: 1;
+      margin-right: 0;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      top: -42px;
+      left: 118px;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: 400;
+      color: #f2f2f2;
+      counter-increment: advantage;
+      content: counter(advantage);
+    }
+  }
+
+  .advantage__description {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 10;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: -112px;
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage__container {
+    width: 1300px;
+    padding-top: 73px;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px;
+  }
+
+  .advantage__item {
+    margin-bottom: 0;
+    &:nth-child(odd) {
+      flex-grow: 0;
+      margin-right: 80px;
+    }
+    &:nth-child(even) {
+      margin-right: 80px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
 }
