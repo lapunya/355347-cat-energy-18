@@ -16,6 +16,7 @@
       <div class="header__top">
         <a class="header__logo">
           <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
             <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
             <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип сайта">
           </picture>
@@ -60,13 +61,15 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--extra">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
-          <div class="form__input-box">
+          <div class="form__fieldset-wrap">
+          <div class="form__input-box form__input-box--extra">
             <label class="form__label form__label--email" for="email">E-&nbsp;mail:*</label>
             <input class="form__text" name="Email" type="email" id="email" value="kuklachev@gmail.com">
           </div>
-          <div class="form__input-box">
+          <div class="form__input-box form__input-box--extra">
             <label class="form__label form__label--tel" for="tel">Телефон:*</label>
             <input class="form__text" name="Telephone" type="tel" id="tel" value="8 (960) 900-60-90">
+          </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--extra">
@@ -75,6 +78,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--extra form__fieldset--check">
           <legend class="form__title form__title--extra">Дополнительно</legend>
+          <div class="form__fieldset-wrap form__fieldset-wrap--check">
             <input class="form__check" type="checkbox" name="Sweetener" id="sweetener" checked>
             <label class="form__label form__label--check" for="sweetener">Сахарозаменитель</label>
             <input class="form__check" type="checkbox" name="Water" id="water">
@@ -83,6 +87,7 @@
             <label class="form__label form__label--check" for="milk">Молоко</label>
             <input class="form__check" type="checkbox" name="Vitamins" id="vitamins">
             <label class="form__label form__label--check" for="vitamins">Витамины</label>
+          </div>
         </fieldset>
         <button class="form__submit" type="submit">Отправить&nbsp;заявку</button>
         <span class="form__footnote">* — Обязательные поля</span>
