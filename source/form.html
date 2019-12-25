@@ -37,39 +37,41 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form__container">
         <p class="form__description">Заполните анкету и мы подберем программу&nbsp;питания для вашего кота</p>
-        <fieldset class="form__fieldset">
-          <div class="form__input-box">
-            <label class="form__label" for="name">Имя:*</label>
-            <input class="form__text" name="Name" type="text" id="name" value="Барсик">
-          </div>
-          <div class="form__input-box">
-            <label class="form__label" for="weight">Вес&nbsp;(кг):*</label>
-            <input class="form__text" name="Weight" type="text" id="weight" value="7">
-          </div>
-          <div class="form__input-box">
-            <label class="form__label" for="age">Возраст&nbsp;(лет):</label>
-            <input class="form__text" name="Age" type="text" id="age" value="7">
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--radio">
-          <input class="form__radio" type="radio" name="Program" id="slim" value="Slim" checked>
-          <label class="form__label form__label--radio" for="slim">Похудение</label>
-          <input class="form__radio" type="radio" name="Program" id="mass" value="Mass">
-          <label class="form__label form__label--radio" for="mass">Набор массы</label>
-          <input class="form__radio" type="radio" name="Program" id="advise" value="Advise">
-          <label class="form__label form__label--radio" for="advise">Не знаю (нужен ваш совет)</label>
-        </fieldset>
+        <div class="form__fieldset-wrap">
+          <fieldset class="form__fieldset">
+            <div class="form__input-box">
+              <label class="form__label" for="name">Имя:*</label>
+              <input class="form__text" name="Name" type="text" id="name" value="Барсик">
+            </div>
+            <div class="form__input-box">
+              <label class="form__label" for="weight">Вес&nbsp;(кг):*</label>
+              <input class="form__text" name="Weight" type="text" id="weight" value="7">
+            </div>
+            <div class="form__input-box">
+              <label class="form__label" for="age">Возраст&nbsp;(лет):</label>
+              <input class="form__text" name="Age" type="text" id="age" value="7">
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--radio">
+            <input class="form__radio" type="radio" name="Program" id="slim" value="Slim" checked>
+            <label class="form__label form__label--radio" for="slim">Похудение</label>
+            <input class="form__radio" type="radio" name="Program" id="mass" value="Mass">
+            <label class="form__label form__label--radio" for="mass">Набор массы</label>
+            <input class="form__radio" type="radio" name="Program" id="advise" value="Advise">
+            <label class="form__label form__label--radio" for="advise">Не знаю (нужен ваш совет)</label>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset form__fieldset--extra">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
-          <div class="form__fieldset-wrap">
-          <div class="form__input-box form__input-box--extra">
-            <label class="form__label form__label--email" for="email">E-&nbsp;mail:*</label>
-            <input class="form__text" name="Email" type="email" id="email" value="kuklachev@gmail.com">
-          </div>
-          <div class="form__input-box form__input-box--extra">
-            <label class="form__label form__label--tel" for="tel">Телефон:*</label>
-            <input class="form__text" name="Telephone" type="tel" id="tel" value="8 (960) 900-60-90">
-          </div>
+          <div class="form__fieldset-wrap form__fieldset-wrap--contact">
+            <div class="form__input-box form__input-box--extra">
+              <label class="form__label form__label--email" for="email">E-&nbsp;mail:*</label>
+              <input class="form__text" name="Email" type="email" id="email" value="kuklachev@gmail.com">
+            </div>
+            <div class="form__input-box form__input-box--extra">
+              <label class="form__label form__label--tel" for="tel">Телефон:*</label>
+              <input class="form__text" name="Telephone" type="tel" id="tel" value="8 (960) 900-60-90">
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--extra">
