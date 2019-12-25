@@ -269,7 +269,6 @@
   .form__description {
     font-size: 20px;
     line-height: 30px;
-    width: 380px;
     padding: 0;
     padding-top: 31px;
     margin: 0;
@@ -358,6 +357,11 @@
     }
   }
 
+  .form__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
   .form__input-box--extra {
     width: 100%;
   }
@@ -393,15 +397,12 @@
     padding-left: 18px;
   }
 
+  .form__wrap--check {
+    justify-content: space-between;
+  }
+  
   .form__fieldset--check {
     padding-top: 65px;
-  }
-
-  .form__fieldset-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
   }
 
   .form__label--check {
@@ -429,6 +430,22 @@
     left: 10px;
   }
 
+  .form__wrap--submit {
+    align-items: center;
+  }
+  
+  .form__submit {
+    font-size: 20px;
+    padding: 15px 62px;
+    padding-right: 67px;
+    margin: 0;
+    margin-right: 61px;
+  }
+  
+  .form__footnote {
+    font-size: 16px;
+  }
+  
 }
 
 @media (min-width: @desktop-width) {
@@ -436,37 +453,39 @@
     width: 1300px;
     padding-right: 40px;
     padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form__description {
     padding-top: 30px;
-  }
-
-  .form__fieldset-wrap {
-    align-items: center;
-    padding-top: 65px;
-    padding-bottom: 70px;
+    width: 100%;
+    margin-bottom: 65px;
   }
 
   .form__fieldset {
     width: 47%;
+    margin-bottom: 70px;
     padding-top: 0;
-    margin-bottom: 0;
   }
 
   .form__fieldset--radio {
     padding-top: 35px;
     padding-left: 44px;
-    margin-bottom: 0;
-  }
-
-  .form__fieldset-wrap--contact {
-    padding-top: 75px;
-    padding-bottom: 68px;
+    margin-bottom: 70px;
   }
   
   .form__fieldset--extra {
-    width: auto;
+    width: 100%;
+  }
+  
+  .form__title {
+    margin-bottom: 75px;
+  }
+  
+  .form__wrap {
+    justify-content: space-between;
   }
   
   .form__input-box--extra {
@@ -486,22 +505,6 @@
       top: 2px;
       right: -472px;
     }
-  }
-
-  .form__title--comment {
-    margin-bottom: 75px;
-  }
-  
-  .form__area {
-    margin-bottom: 60px;
-  }
-  
-  .form__title--extra {
-    margin-bottom: 66px;
-  }
-  
-  .form__fieldset-wrap--check {
-    padding: 0;
   }
   
   .form__label--check {
