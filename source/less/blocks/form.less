@@ -194,7 +194,13 @@
   }
 }
 
+.form__wrap--check {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form__label--check {
+  width: 100%;
   margin-right: 0;
   margin-bottom: 25px;
   padding-left: 47px;
@@ -262,8 +268,9 @@
 @media (min-width: @tablet-width) {
   .form__container {
     width: 768px;
-    padding-left: 71px;
     padding-right: 67px;
+    padding-bottom: 73px;
+    padding-left: 71px;
   }
 
   .form__description {
@@ -361,7 +368,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .form__input-box--extra {
     width: 100%;
   }
@@ -400,9 +407,18 @@
   .form__wrap--check {
     justify-content: space-between;
   }
-  
+
   .form__fieldset--check {
     padding-top: 65px;
+  }
+
+  .form__title--extra {
+    &::after {
+      width: 446px;
+      top: 22px;
+      right: 0;
+      left: 251px;
+    }
   }
 
   .form__label--check {
@@ -433,7 +449,7 @@
   .form__wrap--submit {
     align-items: center;
   }
-  
+
   .form__submit {
     font-size: 20px;
     padding: 15px 62px;
@@ -441,11 +457,11 @@
     margin: 0;
     margin-right: 61px;
   }
-  
+
   .form__footnote {
     font-size: 16px;
   }
-  
+
 }
 
 @media (min-width: @desktop-width) {
@@ -475,19 +491,33 @@
     padding-left: 44px;
     margin-bottom: 70px;
   }
-  
+
   .form__fieldset--extra {
     width: 100%;
+    margin-bottom: 68px;
   }
-  
+
   .form__title {
     margin-bottom: 75px;
+
+    &::before {
+      width: 25px;
+      left: -65px;
+    }
+
+    &::after {
+      width: 777px;
+      top: 22px;
+      left: 553px;
+      right: 0;
+    }
   }
-  
+
+
   .form__wrap {
     justify-content: space-between;
   }
-  
+
   .form__input-box--extra {
     width: 47%;
     margin-bottom: 0;
@@ -506,7 +536,23 @@
       right: -472px;
     }
   }
-  
+
+  .form__title--comment {
+    &::after {
+      width: 1111px;
+      left: 219px;
+    }
+  }
+
+  .form__title--extra {
+    margin-bottom: 65px;
+
+    &::after {
+      width: 1078px;
+      left: 252px;
+    }
+  }
+
   .form__label--check {
     width: 20%;
     margin: 0;
