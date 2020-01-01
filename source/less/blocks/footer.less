@@ -74,6 +74,7 @@
 
 .footer__item {
   margin-right: 33px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -138,12 +139,12 @@
   }
 
   .footer__map {
-  background-image: url('../../img/map-tablet.jpg');
-  background-repeat: no-repeat;
-  background-size: 767px 400px;
-  background-position: center -4px;
-  min-height: 396px;
-}
+    background-image: url('../../img/map-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: 767px 400px;
+    background-position: center -4px;
+    min-height: 396px;
+  }
 
   .footer__bottom {
     display: flex;
@@ -169,14 +170,34 @@
     width: 100%;
     position: relative;
   }
-  
+
   .footer__map {
     position: absolute;
-    background-image: url('../../img/map-desktop.jpg');
-    background-size: 100% 400px;
-    background-position: center;
+    top: 1px;
+    left: 1px;
+    background-image: url(../../img/map-desktop.jpg);
+    background-size: cover;
+    background-position: top;
     width: 100%;
     min-height: 400px;
+  }
+
+  .footer__cooperation {
+    width: 570px;
+    padding-top: 66px;
+    padding-right: 90px;
+    padding-bottom: 59px;
+    padding-left: 76px;
+    position: absolute;
+    top: 96px;
+    left: 65px;
+    z-index: 2;
+  }
+
+  .footer__address {
+    margin-top: -3px;
+    padding-left: 5px;
+    text-align: left;
   }
   
 }

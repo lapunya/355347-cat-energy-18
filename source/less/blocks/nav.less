@@ -1,11 +1,25 @@
 .nav {
-  display: none;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.nav--closed {
+  width: auto;
+}
+
+.nav--opened {
+  width: 100%;
 }
 
 .nav__list {
+  display: none;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.nav__list--opened {
+  display: block;
 }
 
 .nav__item {
@@ -23,12 +37,65 @@
   text-transform: uppercase;
 }
 
+.nav__toggle {
+  width: 24px;
+  height: 2px;
+  background-color: #222222;
+  border: none;
+  padding: 0;
+  position: relative;
+  top: 3px;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: #222222;
+    position: absolute;
+    top: -8px;
+    left: 0;
+  }
+
+  &::after {
+    top: 8px;
+  }
+}
+
+.nav__toggle--crossline {
+  background-color: transparent;
+  &::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  &::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
+
+.nav--nojs {
+  width: 100%;
+}
+
+.nav--nojs .nav__list {
+  display: block;
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .nav {
     display: flex;
     width: auto;
   }
 
+  .nav__toggle {
+    display: none;
+  }
+  
   .nav__list {
     display: flex;
     width: 100%;
@@ -36,11 +103,12 @@
 
   .nav__item {
     margin-right: 35px;
+
     &:last-child {
       margin-right: 0;
     }
   }
-  
+
   .nav__link {
     font-size: 18px;
     line-height: 25px;
@@ -52,6 +120,9 @@
 @media (min-width: @desktop-width) {
   .nav__link {
     font-size: 20px;
+  }
+
+  .nav__link--white {
     color: #ffffff;
   }
 }
