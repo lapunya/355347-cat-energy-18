@@ -9,9 +9,11 @@ toggle.addEventListener('click', function () {
     nav.classList.remove('nav--closed');
     nav.classList.add('nav--opened');
     navList.classList.add('nav__list--opened');
+    toggle.classList.add('nav__toggle--crossline');
   } else {
     nav.classList.add('nav--closed');
     nav.classList.remove('nav--opened');
     navList.classList.remove('nav__list--opened');
+    toggle.classList.remove('nav__toggle--crossline');
   }
 })

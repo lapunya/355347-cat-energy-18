@@ -1,6 +1,7 @@
 .nav {
   margin-right: 0;
   margin-left: auto;
+  position: relative;
 }
 
 .nav--closed {
@@ -64,6 +65,9 @@
 
 .nav__toggle--crossline {
   background-color: transparent;
+  position: absolute;
+  top: -25px;
+  right: 0;
   &::before {
     transform: rotate(45deg);
     top: 0;
@@ -96,7 +100,7 @@
     display: none;
   }
   
-  .nav__list {
+  .nav .nav__list {
     display: flex;
     width: 100%;
   }
