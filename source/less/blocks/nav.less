@@ -118,7 +118,19 @@
     line-height: 25px;
     font-weight: 400;
     color: #222222;
+    padding-bottom: 6px;
+    &[href]:hover {
+      color: rgba(17, 17, 17, 0.6);
+    }
+    &[href]:active {
+      color: rgba(17, 17, 17, 0.3);
+    }
   }
+  
+  .nav__link--active {
+    border-bottom: 2px solid #68b738;
+  }
+  
 }
 
 @media (min-width: @desktop-width) {
@@ -128,5 +140,16 @@
 
   .nav__link--white {
     color: #ffffff;
+    &[href]:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &[href]:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
+  
+  .nav__link--white-active {
+    border-bottom-color: #ffffff;
+  }
+  
 }

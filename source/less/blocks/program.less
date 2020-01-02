@@ -171,6 +171,22 @@
       top: 10px;
       right: -48px;
     }
+
+    &:hover {
+      &::after {
+        background-image: url('../../img/icon-right-arrow-verylong.svg');
+        width: 32px;
+        right: -58px;
+      }
+    }
+
+    &:active {
+      color: rgba(17, 17, 17, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 
 
