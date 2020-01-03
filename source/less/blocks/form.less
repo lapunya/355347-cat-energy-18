@@ -54,8 +54,22 @@
   padding-top: 14px;
   padding-bottom: 13px;
   padding-left: 15px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid;
+  border-color: rgba(205, 205, 205, 0.5);
   width: 100%;
+
+  &:hover {
+    border-color: rgb(205, 205, 205);
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .form__fieldset--radio {
@@ -77,7 +91,22 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #cecece;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover {
+    &::before {
+      border-color: #bababa;
+    }
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -181,6 +210,15 @@
   padding: 0;
   padding-top: 13px;
   padding-left: 16px;
+
+  &:hover {
+    border-color: rgb(205, 205, 205);
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
+  }
 }
 
 .form__title--extra {
@@ -214,6 +252,21 @@
     width: 30px;
     height: 30px;
     border: 1px solid #cecece;
+  }
+
+  &:hover {
+    &::before {
+      border-color: #bababa;
+    }
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -253,6 +306,15 @@
   margin-left: 20px;
   margin-bottom: 22px;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form__footnote {
@@ -400,7 +462,7 @@
     line-height: 30px;
     width: 100%;
     min-height: 175px;
-    padding-top: 11px;
+    padding-top: 8px;
     padding-left: 18px;
   }
 
@@ -410,6 +472,7 @@
 
   .form__fieldset--check {
     padding-top: 65px;
+    margin-bottom: 63px;
   }
 
   .form__title--extra {
@@ -468,6 +531,7 @@
   .form__container {
     width: 1300px;
     padding-right: 40px;
+    padding-bottom: 84px;
     padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -481,14 +545,14 @@
   }
 
   .form__fieldset {
-    width: 47%;
+    width: 570px;
     margin-bottom: 70px;
     padding-top: 0;
   }
 
   .form__fieldset--radio {
     padding-top: 35px;
-    padding-left: 44px;
+    padding-left: 40px;
     margin-bottom: 70px;
   }
 
@@ -513,13 +577,12 @@
     }
   }
 
-
   .form__wrap {
     justify-content: space-between;
   }
 
   .form__input-box--extra {
-    width: 47%;
+    width: 570px;
     margin-bottom: 0;
   }
 
@@ -545,7 +608,7 @@
   }
 
   .form__title--extra {
-    margin-bottom: 65px;
+    margin-bottom: 63px;
 
     &::after {
       width: 1078px;
@@ -558,4 +621,9 @@
     margin: 0;
   }
 
+  .form__submit {
+    width: 569px;
+    margin-right: 82px;
+  }
+  
 }

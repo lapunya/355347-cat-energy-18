@@ -42,7 +42,7 @@
 
 .footer__bottom {
   padding-left: 20px;
-  padding-top: 39px;
+  padding-top: 41px;
   padding-right: 20px;
 }
 
@@ -50,6 +50,15 @@
   display: block;
   margin-bottom: 25px;
   text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__main-logo {
@@ -86,6 +95,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover .footer__logo {
+    fill: #68b738;
+  }
+
+  &:active .footer__logo {
+    opacity: 0.3;
+  }
 }
 
 .footer__logo {
@@ -102,11 +119,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover .footer__logo--academy {
+    fill: #68b738;
+  }
+  
+  &:active {
+    opacity: 0.3;
+  }
+  
 }
 
 .footer__logo--academy {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 38px;
 }
 
 @media (min-width: @tablet-width) {
@@ -116,7 +142,7 @@
   }
 
   .footer__cooperation {
-    padding: 23px 72px 58px;
+    padding: 66px 72px 58px;
     justify-content: space-between;
   }
 
@@ -169,12 +195,10 @@
   .footer__container {
     width: 100%;
     position: relative;
+    padding-bottom: 0;
   }
 
   .footer__map {
-    position: absolute;
-    top: 1px;
-    left: 1px;
     background-image: url(../../img/map-desktop.jpg);
     background-size: cover;
     background-position: top;
@@ -199,5 +223,9 @@
     padding-left: 5px;
     text-align: left;
   }
-  
+
+  .footer__bottom {
+    padding: 64px;
+  }
+
 }
