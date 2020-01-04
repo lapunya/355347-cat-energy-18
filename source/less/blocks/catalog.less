@@ -79,6 +79,15 @@
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
 }
 
 .catalog__item--all {
@@ -151,6 +160,14 @@
   padding-bottom: 10px;
   text-align: center;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -230,7 +247,7 @@
     display: block;
     margin-top: -4px;
   }
-  
+
   .catalog__table {
     width: 100%;
   }
@@ -253,7 +270,7 @@
   }
 
   .catalog__item--all {
-    padding-top: 165px;
+    padding-top: 164px;
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
 
@@ -290,6 +307,80 @@
     width: auto;
     margin-right: 37px;
     margin-left: 38px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__container {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .catalog__list {
+    padding-top: 165px;
+  }
+
+  .catalog__item {
+    width: 245px;
+    margin-bottom: 143px;
+    padding-top: 160px;
+
+    &:nth-child(odd) .catalog__link-image {
+      width: 245px;
+    }
+
+    &:nth-child(even) .catalog__link-image {
+      width: 245px;
+      height: 208px;
+    }
+
+    &:nth-child(odd) .catalog__link {
+      position: absolute;
+      top: -45px;
+    }
+
+    &:nth-child(even) .catalog__link {
+      position: absolute;
+      top: -81px;
+    }
+
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog__info {
+    margin-bottom: 33px;
+    padding-right: 39px;
+  }
+
+  .catalog__link-book {
+    margin-right: 38px;
+  }
+
+  .catalog__item--all {
+    padding-top: 162px;
+
+    &::before {
+      height: 60px;
+      top: 53px;
+      left: 121px;
+      background-color: #e8e8e8;
+    }
+
+    &::after {
+      width: 60px;
+      top: 82px;
+      left: 92px;
+      background-color: #e8e8e8;
+    }
+  }
+
+  .catalog__description {
+    margin-bottom: 86px;
   }
 
 }

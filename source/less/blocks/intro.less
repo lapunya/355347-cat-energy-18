@@ -15,7 +15,8 @@
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 26px;
   text-align: center;
 }
@@ -27,7 +28,8 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  width: 200px;
+  margin: 0 auto;
   margin-bottom: 28px;
 }
 
@@ -47,8 +49,18 @@
   background-color: #68b738;
   display: block;
   text-align: center;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 11px;
   padding-bottom: 11px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -69,6 +81,7 @@
     font-weight: 400;
     color: #111111;
     text-align: left;
+    width: 425px;
     margin-bottom: 41px;
     margin-left: 88px;
   }
@@ -79,6 +92,7 @@
     font-weight: 400;
     color: #111111;
     text-align: left;
+    width: 290px;
     margin-bottom: 48px;
     margin-left: 88px;
   }
@@ -104,7 +118,7 @@
     padding-left: 27px;
     width: 245px;
     z-index: 2;
-    order: 3
+    order: 3;
   }
 }
 
@@ -123,23 +137,23 @@
     width: 425px;
     margin-left: 115px;
   }
-  
+
   .intro__description {
     margin-left: 115px;
     margin-bottom: 53px;
   }
-  
+
   .intro__pic {
     position: absolute;
     left: 515px;
     top: 142px;
     margin-top: 0;
   }
-  
+
   .intro__link {
     margin-left: 115px;
   }
-  
+
   .intro__image {
     width: 552px;
     height: 499px;

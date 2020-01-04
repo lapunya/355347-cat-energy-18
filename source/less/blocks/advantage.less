@@ -14,7 +14,7 @@
   font-weight: 400;
   color: #111111;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .advantage__list {
@@ -26,6 +26,38 @@
 .advantage__item {
   padding-left: 80px;
   margin-bottom: 26px;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: #68b738;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background-image: url('../../img/advantage-leaf@1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantage__item--powder {
+  &::before {
+    background-image: url('../../img/advantage-powder@1x.png');
+  }
+}
+
+.advantage__item--meal {
+  &::before {
+    background-image: url('../../img/advantage-dining@1x.png');
+  }
+}
+
+.advantage__item--time {
+  &::before {
+    background-image: url('../../img/advantage-clock@1x.png');
+  }
 }
 
 .advantage__description {
@@ -35,38 +67,6 @@
   font-weight: 400;
   color: #444444;
   margin: 0;
-  position: relative;
-
-  &::before {
-    content: '';
-    background-color: #68b738;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: -2px;
-    left: -80px;
-    background-image: url('../../img/advantage-leaf@1x.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-.advantage__description--powder {
-  &::before {
-    background-image: url('../../img/advantage-powder@1x.png');
-  }
-}
-
-.advantage__description--meal {
-  &::before {
-    background-image: url('../../img/advantage-dining@1x.png');
-  }
-}
-
-.advantage__description--time {
-  &::before {
-    background-image: url('../../img/advantage-clock@1x.png');
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -97,7 +97,6 @@
     padding-left: 0;
     margin: 0;
     margin-bottom: 82px;
-    position: relative;
 
     &:nth-child(odd) {
       flex-grow: 1.4;
@@ -112,6 +111,12 @@
     &:last-child,
     &:nth-last-child(2) {
       margin-bottom: 0;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: -2px;
     }
 
     &::after {
@@ -131,14 +136,8 @@
     width: 245px;
     font-size: 16px;
     line-height: 24px;
+    position: relative;
     z-index: 10;
-
-    &::before {
-      width: 80px;
-      height: 80px;
-      top: -112px;
-      left: 0;
-    }
   }
 }
 
@@ -149,17 +148,21 @@
     padding-right: 40px;
     padding-bottom: 0;
     padding-left: 40px;
+    border-bottom: none;
   }
 
   .advantage__item {
     margin-bottom: 0;
+
     &:nth-child(odd) {
       flex-grow: 0;
       margin-right: 80px;
     }
+
     &:nth-child(even) {
       margin-right: 80px;
     }
+
     &:last-child {
       margin-right: 0;
     }

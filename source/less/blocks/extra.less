@@ -79,6 +79,14 @@
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .extra__item--gift {
@@ -124,13 +132,13 @@
     margin-left: 37px;
 
     &::before {
-    content: '';
-    width: 28px;
-    height: 3px;
-    background-color: #68b738;
-    position: absolute;
-    top: 22px;
-    left: -67px;
+      content: '';
+      width: 28px;
+      height: 3px;
+      background-color: #68b738;
+      position: absolute;
+      top: 22px;
+      left: -67px;
     }
 
     &::after {
@@ -143,7 +151,7 @@
   .extra__list {
     border-top: none;
   }
-  
+
   .extra__item {
     padding-top: 25px;
     padding-right: 36px;
@@ -168,34 +176,99 @@
     line-height: 20px;
     margin-bottom: 0;
   }
-  
+
   .extra__quantity {
     margin-right: 50px;
   }
-  
+
   .extra__link {
     width: 100%;
     margin-top: 22px;
   }
-  
+
   .extra__item--gift {
-  background-image: url('../../img/gift-photo-tablet@1x.jpg');
-  background-repeat: no-repeat;
-  padding: 0;
-  padding-top: 65px;
-  padding-bottom: 45px;
-  border: none;
-  margin-top: 70px;
-}
-  
+    background-image: url('../../img/gift-photo-tablet@1x.jpg');
+    background-repeat: no-repeat;
+    padding: 0;
+    padding-top: 65px;
+    padding-bottom: 45px;
+    border: none;
+    margin-top: 70px;
+  }
+
   .extra__logo {
     margin: 0;
     margin-left: 91px;
   }
-  
+
   .extra__description--gift {
     margin: 0;
     text-align: left;
   }
-  
+
+}
+
+@media (min-width: @desktop-width) {
+  .extra__container {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 36px;
+    padding-right: 40px;
+    padding-bottom: 86px;
+    padding-left: 40px;
+  }
+
+  .extra__title {
+    margin-left: 0;
+
+    &::before {
+      width: 27px;
+    }
+
+    &::after {
+      width: 956px;
+      left: 373px;
+    }
+  }
+
+  .extra__list {
+    width: 895px;
+  }
+
+  .extra__item {
+    padding-top: 17px;
+    padding-right: 0;
+    padding-bottom: 13px;
+    padding-left: 1px;
+    border-right: none;
+    border-left: none;
+  }
+
+  .extra__title-item {
+    flex-grow: 1;
+  }
+
+  .extra__description {
+    width: 287px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 38px;
+  }
+
+  .extra__link {
+    margin-top: 0;
+    width: auto;
+    padding-right: 92px;
+    padding-left: 91px;
+  }
+
+  .extra__item--gift {
+    background-image: url('../../img/gift-photo-desktop@1x.jpg');
+    width: 245px;
+    min-height: 289px;
+    margin-top: 0;
+  }
+
 }
