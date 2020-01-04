@@ -92,10 +92,15 @@
 .extra__item--gift {
   background-image: url('../../img/gift-photo-mobile@1x.jpg');
   background-repeat: no-repeat;
+  background-size: 280px 289px;
   padding-top: 64px;
   padding-bottom: 45px;
   border-bottom: none;
   margin-top: 39px;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url('../../img/gift-photo-mobile@2x.jpg');
+  }
 }
 
 .extra__description--gift {
@@ -189,11 +194,16 @@
   .extra__item--gift {
     background-image: url('../../img/gift-photo-tablet@1x.jpg');
     background-repeat: no-repeat;
+    background-size: 708px 200px;
     padding: 0;
     padding-top: 65px;
     padding-bottom: 45px;
     border: none;
     margin-top: 70px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url('../../img/gift-photo-tablet@2x.jpg');
+    }
   }
 
   .extra__logo {
@@ -266,9 +276,14 @@
 
   .extra__item--gift {
     background-image: url('../../img/gift-photo-desktop@1x.jpg');
+    background-size: 245px 289px;
     width: 245px;
     min-height: 289px;
     margin-top: 0;
+    
+    @media (min-resolution: @retina-dppx) {
+      background-image: url('../../img/gift-photo-desktop@2x.jpg');
+    }
   }
 
 }

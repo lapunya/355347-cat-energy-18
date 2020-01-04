@@ -4,11 +4,16 @@
   background-color: #f2f2f2;
   background-image: url('../../img/before-mobile@1x.png');
   background-repeat: no-repeat;
+  background-size: 320px 240px;
   background-position: center bottom 86px;
   padding-top: 17px;
   padding-bottom: 360px;
   padding-left: 20px;
   padding-right: 20px;
+  
+  @media(min-resolution: @retina-dppx) {
+    background-image: url('../../img/before-mobile@2x.png');
+  }
 }
 
 .example__title {

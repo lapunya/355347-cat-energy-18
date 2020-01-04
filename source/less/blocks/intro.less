@@ -8,6 +8,10 @@
   padding-top: 26px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media(min-resolution: @retina-dppx) {
+    background-image: url('../../img/index-background-mobile@2x.jpg');
+  }
 }
 
 .intro__title {
@@ -131,6 +135,9 @@
     background-image: url('../../img/index-background-desktop@1x.jpg');
     background-size: 720px 100%;
     background-position: right -45px top;
+    @media (min-resolution: @retina-dppx) {
+      background-image: url('../../img/index-background-desktop@2x.jpg');
+    }
   }
 
   .intro__title {
