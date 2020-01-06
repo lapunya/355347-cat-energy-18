@@ -2,18 +2,18 @@
   width: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
-  background-image: url('../../img/before-mobile@1x.png');
+  /*background-image: url('../../img/before-mobile@1x.png');
   background-repeat: no-repeat;
   background-size: 320px 240px;
-  background-position: center bottom 86px;
+  background-position: center bottom 86px;*/
   padding-top: 17px;
   padding-bottom: 360px;
   padding-left: 20px;
   padding-right: 20px;
   
-  @media(min-resolution: @retina-dppx) {
+ /* @media(min-resolution: @retina-dppx) {
     background-image: url('../../img/before-mobile@2x.png');
-  }
+  }*/
 }
 
 .example__title {
@@ -94,9 +94,9 @@
 @media (min-width: @tablet-width) {
   .example__container {
     width: 768px;
-    background-image: url('../../img/before-tablet@1x.png');
+   /* background-image: url('../../img/before-tablet@1x.png');
     background-size: 690px 517px;
-    background-position: center bottom 84px;
+    background-position: center bottom 84px;*/
     background-color: #ffffff;
     margin: 0 auto;
     padding-top: 43px;
@@ -104,9 +104,9 @@
     padding-bottom: 687px;
     padding-left: 30px;
     
-    @media (min-resolution: @retina-dppx) {
+    /*@media (min-resolution: @retina-dppx) {
       background-image: url('../../img/before-tablet@2x.png');
-    }
+    }*/
   }
 
   .example__title {
@@ -166,20 +166,26 @@
 
 @media (min-width: @desktop-width) {
   .example__container {
-    background-image: url('../../img/before-desktop@1x.png');
-    background-position: top 17px right;
+    /*background-image: url('../../img/before-desktop@1x.png');
+    background-position: top 17px right;*/
+    display: flex;
     width: 1300px;
-    padding-top: 72px;
+    padding-top: 18px;
     padding-bottom: 70px;
     padding-left: 40px;
     
-    @media (min-resolution: @retina-dppx) {
+    /*@media (min-resolution: @retina-dppx) {
       background-image: url('../../img/before-desktop@2x.png');
-    }
+    }*/
   }
 
+  .example__wrap {
+    width: 570px;
+  }
+  
   .example__title {
     margin-bottom: 146px;
+    padding-top: 55px;
   }
 
   .example__description {
@@ -189,7 +195,6 @@
 
   .example__result {
     flex-wrap: wrap;
-    width: 50%;
     justify-content: flex-start;
   }
 
@@ -203,5 +208,26 @@
   .example__cost-text {
     margin-right: 60px;
   }
-
+  
+  .slider {
+    width: 636px;
+    display: flex;
+  }
+  
+  .slide-1 {
+    width: 365px;
+    height: 517px;
+    background-image: url('../../img/before-desktop@1x.png');
+    background-repeat: no-repeat;
+  }
+  
+  .slide-2 {
+    width: 271px;
+    height: 517px;
+    background-image: url('../../img/after-desktop@1x.png');
+    background-repeat: no-repeat;
+    background-position: -365px;
+  }
+  
+  
 }
