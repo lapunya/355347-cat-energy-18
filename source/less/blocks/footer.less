@@ -1,7 +1,6 @@
 .footer__container {
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 24px;
   background-color: #f2f2f2;
 }
 
@@ -12,6 +11,10 @@
   padding-right: 20px;
   padding-bottom: 24px;
   padding-left: 20px;
+}
+
+.footer__cooperation--grey {
+  background-color: #f2f2f2;
 }
 
 .footer__title {
@@ -42,8 +45,9 @@
 
 .footer__bottom {
   padding-left: 20px;
-  padding-top: 41px;
+  padding-top: 40px;
   padding-right: 20px;
+  padding-bottom: 24px;
 }
 
 .footer__link-main {
@@ -72,17 +76,18 @@
   margin-bottom: 20px;
   padding-top: 22px;
   padding-bottom: 21px;
-  padding-left: 74px;
+  padding-left: 73px;
   padding-right: 74px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: center;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .footer__item {
-  margin-right: 33px;
+  margin-right: 37px;
 
   &:last-child {
     margin-right: 0;
@@ -90,8 +95,6 @@
 }
 
 .footer__link-social {
-  width: 22px;
-  height: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,11 +126,11 @@
   &:hover .footer__logo--academy {
     fill: #68b738;
   }
-  
+
   &:active {
     opacity: 0.3;
   }
-  
+
 }
 
 .footer__logo--academy {
@@ -142,7 +145,7 @@
   }
 
   .footer__cooperation {
-    padding: 66px 72px 58px;
+    padding: 65px 72px 58px;
     justify-content: space-between;
   }
 
@@ -174,28 +177,54 @@
 
   .footer__bottom {
     display: flex;
-    justify-content: space-between;
-    padding-top: 63px;
-    padding-left: 30px;
-    padding-right: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 54px 30px;
   }
 
   .footer__link-main {
     margin: 0;
+    padding-top: 5px;
   }
 
   .footer__list {
     border: none;
     padding: 0;
     margin: 0;
+    margin-right: 138px;
+    margin-left: 155px;
   }
+
+  .footer__item {
+    margin-right: 28px;
+  }
+
+  .footer__logo--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .footer__logo--insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .footer__logo--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .footer__logo--academy {
+    position: relative;
+    left: 16px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
   .footer__container {
     width: 100%;
     position: relative;
-    padding-bottom: 0;
   }
 
   .footer__map {
@@ -208,6 +237,7 @@
 
   .footer__cooperation {
     width: 570px;
+    background-color: #ffffff;
     padding-top: 66px;
     padding-right: 90px;
     padding-bottom: 59px;
@@ -226,6 +256,12 @@
 
   .footer__bottom {
     padding: 64px;
+    padding-top: 55px;
+  }
+
+  .footer__list {
+    margin-right: 394px;
+    margin-left: 413px;
   }
 
 }

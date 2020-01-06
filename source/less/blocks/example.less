@@ -95,6 +95,7 @@
   .example__container {
     width: 768px;
     background-image: url('../../img/before-tablet@1x.png');
+    background-size: 690px 517px;
     background-position: center bottom 84px;
     background-color: #ffffff;
     margin: 0 auto;
@@ -102,6 +103,10 @@
     padding-right: 30px;
     padding-bottom: 687px;
     padding-left: 30px;
+    
+    @media (min-resolution: @retina-dppx) {
+      background-image: url('../../img/before-tablet@2x.png');
+    }
   }
 
   .example__title {
@@ -161,11 +166,16 @@
 
 @media (min-width: @desktop-width) {
   .example__container {
+    background-image: url('../../img/before-desktop@1x.png');
     background-position: top 17px right;
     width: 1300px;
     padding-top: 72px;
     padding-bottom: 70px;
     padding-left: 40px;
+    
+    @media (min-resolution: @retina-dppx) {
+      background-image: url('../../img/before-desktop@2x.png');
+    }
   }
 
   .example__title {
