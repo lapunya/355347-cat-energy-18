@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   <title>Кэт энерджи</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,15 +14,15 @@
     <div class="header__container">
       <div class="header__top">
         <a class="header__logo">
-         <picture>
-          <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
-          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-          <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип сайта">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип сайта">
           </picture>
         </a>
       </div>
       <nav class="nav nav--closed nav--nojs">
-       <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link nav__link--white nav__link--active nav__link--white-active">Главная</a></li>
           <li class="nav__item"><a class="nav__link nav__link--white" href="catalog.html">Каталог продукции</a></li>
@@ -82,24 +81,31 @@
     </section>
     <section class="example">
       <div class="example__container">
-       <div class="example__wrap">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__result">
-          <div class="example__indicator">
-            <span class="example__value">5 кг</span>
-            <span class="example__definition">Снижение веса</span>
+        <div class="example__wrap">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__result">
+            <div class="example__indicator">
+              <span class="example__value">5 кг</span>
+              <span class="example__definition">Снижение веса</span>
+            </div>
+            <div class="example__indicator">
+              <span class="example__value">60 дней</span>
+              <span class="example__definition example__definition--time">Затрачено времени</span>
+            </div>
+            <p class="example__cost"><span class="example__cost-text">Затраты на питание:</span> 15 000 руб.</p>
           </div>
-          <div class="example__indicator">
-            <span class="example__value">60 дней</span>
-            <span class="example__definition example__definition--time">Затрачено времени</span>
+        </div>
+        <div class="example__slider">
+          <div class="example__slide-before"></div>
+          <div class="example__slide-after"></div>
+          <div class="example__toggle">
+            <button class="example__button example__button--before" type="button">Было</button>
+            <div class="example__range">
+              <div class="example__runner"></div>
+            </div>
+            <button class="example__button example__button--after" type="button">Стало</button>
           </div>
-          <p class="example__cost"><span class="example__cost-text">Затраты на питание:</span> 15 000 руб.</p>
-        </div>
-        </div>
-        <div class="slider">
-          <div class="slide-1"></div>
-          <div class="slide-2"></div>
         </div>
       </div>
     </section>

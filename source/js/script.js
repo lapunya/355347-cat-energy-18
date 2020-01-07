@@ -1,6 +1,10 @@
 var nav = document.querySelector('.nav');
 var toggle = document.querySelector('.nav__toggle');
 var navList = document.querySelector('.nav__list');
+var slideBefore = document.querySelector('.example__slide-before');
+var slideAfter = document.querySelector('.example__slide-after');
+var buttonBefore = document.querySelector('.example__button--before');
+var buttonAfter = document.querySelector('.example__button--after');
 
 nav.classList.remove('nav--nojs');
 
@@ -16,4 +20,14 @@ toggle.addEventListener('click', function () {
     navList.classList.remove('nav__list--opened');
     toggle.classList.remove('nav__toggle--crossline');
   }
-})
+});
+
+buttonBefore.addEventListener('click', function () {
+  slideBefore.classList.add('example__slide--full');
+  slideAfter.classList.add('example__slide--closed');
+});
+
+buttonAfter.addEventListener('click', function() {
+  slideAfter.classList.add('example__slide--full');
+  slideBefore.classList.add('example__slide--closed');
+});
