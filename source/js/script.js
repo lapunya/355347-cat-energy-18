@@ -23,11 +23,15 @@ toggle.addEventListener('click', function () {
 });
 
 buttonBefore.addEventListener('click', function () {
+  slideAfter.classList.remove('example__slide--full');
+  slideBefore.classList.remove('example__slide--closed');
   slideBefore.classList.add('example__slide--full');
   slideAfter.classList.add('example__slide--closed');
 });
 
-buttonAfter.addEventListener('click', function() {
+buttonAfter.addEventListener('click', function () {
+  slideBefore.classList.remove('example__slide--full');
+  slideAfter.classList.remove('example__slide--closed');
   slideAfter.classList.add('example__slide--full');
   slideBefore.classList.add('example__slide--closed');
 });
