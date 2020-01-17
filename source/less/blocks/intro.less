@@ -126,6 +126,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .intro {
+    background: linear-gradient(to right, #ffffff 50%, #64a83b 50%);
+  }
+
   .intro__container {
     width: 100%;
     max-width: 1440px;
@@ -136,6 +140,7 @@
     background-size: 720px 100%;
     background-position: right top;
     position: relative;
+
     @media (min-resolution: @retina-dppx) {
       background-image: url('../../img/index-background-desktop@2x.jpg');
     }

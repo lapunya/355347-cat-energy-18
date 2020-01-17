@@ -278,12 +278,39 @@
 }
 
 @media (min-width: @desktop-width) {
+  .example {
+    background: linear-gradient(to right, #f2f2f2 50%, #ebebeb 50%);
+    position: relative;
+    &::before {
+      content: '';
+      background-color: #ffffff;
+      position: absolute;
+      width: 100%;
+      height: 208px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
   .example__container {
     display: flex;
     width: 1300px;
     padding-top: 18px;
     padding-bottom: 70px;
     padding-left: 40px;
+    background: linear-gradient(to right, #f2f2f2 75%, #ebebeb 75%);
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: '';
+      background-color: #ffffff;
+      position: absolute;
+      width: 100%;
+      height: 208px;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   .example__wrap {
@@ -306,6 +333,10 @@
     margin-bottom: 0;
   }
 
+  .example__definition {
+    background-color: #f2f2f2;
+  }
+  
   .example__cost {
     width: auto;
     margin-top: 57px;
