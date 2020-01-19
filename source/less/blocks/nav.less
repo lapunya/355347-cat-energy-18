@@ -47,48 +47,21 @@
 }
 
 .nav__toggle {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background-color: #222222;
+  width: 25px;
+  height: 19px;
+  background-color: #ffffff;
   border: none;
-  padding: 0;
-  position: relative;
-  top: 3px;
-  /*
-  &::before,
-  &::after {
-    display: block;
-    content: '';
-    width: 24px;
-    height: 2px;
-    background-color: #222222;
-    position: absolute;
-    top: -8px;
-    left: 0;
-  }
-  
-  &::after {
-    top: 8px;
-  }*/
+  background-image: url('../../img/mobile-menu.svg');
+  background-repeat: no-repeat;
 }
 
-
 .nav__toggle--crossline {
-  background-color: transparent;
+  width: 19px;
+  height: 19px;
+  background-image: url('../../img/close.svg');
   position: absolute;
-  top: -25px;
+  top: -34px;
   right: 0;
-
-  &::before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-    top: 0;
-  }
 }
 
 .nav--nojs {
