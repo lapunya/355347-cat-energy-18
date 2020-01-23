@@ -10,12 +10,12 @@
 
   &::before {
     content: "";
-    width: 100vw;
+    width: 200vw;
     height: 3px;
     background-color: #68b738;
     position: absolute;
     top: 42px;
-    right: -20px;
+    left: -100vw;
   }
 }
 
@@ -30,6 +30,16 @@
   padding-right: 23px;
   position: relative;
   background-color: #ffffff;
+  
+  &::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 14px;
+    left: -20px;
+  }
 }
 
 .extra__list {
@@ -137,9 +147,7 @@
     padding-left: 30px;
 
     &::before {
-      width: 200vw;
       top: 50px;
-      left: -100vw;
     }
   }
 
@@ -149,6 +157,10 @@
     margin-bottom: 80px;
     padding-right: 37px;
     padding-left: 37px;
+    
+    &::before {
+      display: none;
+    }
   }
 
   .extra__list {
