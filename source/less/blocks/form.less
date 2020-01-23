@@ -5,11 +5,6 @@
   padding-bottom: 32px;
 }
 
-.main__title--form {
-  border: none;
-  padding-bottom: 25px;
-}
-
 .form__description {
   font-size: 14px;
   line-height: 18px;
@@ -17,6 +12,7 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0 20px;
+  margin-top: -3px;
 }
 
 .form__fieldset {
@@ -149,29 +145,33 @@
 }
 
 .form__fieldset--extra {
-  padding-top: 0;
-  border: none;
-}
-
-.form__title {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #111111;
-  position: relative;
-  padding: 0;
   padding-top: 30px;
-  margin-bottom: 33px;
-
-  &::after {
+  border: none;
+  position: relative;
+  
+  &::before {
     content: "";
-    width: 99px;
+    width: 100vw;
     height: 3px;
     background-color: #68b738;
     position: absolute;
     top: 44px;
     right: -20px;
   }
+}
+
+.form__title {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 204px;
+  background-color: #ffffff;
+  margin-bottom: 33px;
 }
 
 .form__input-box--extra {
@@ -199,15 +199,13 @@
   margin-right: 10px;
 }
 
+.form__fieldset--comment {
+  padding-top: 0;
+}
+
 .form__title--comment {
   padding-top: 2px;
   margin-bottom: 34px;
-
-  &::after {
-    width: 158px;
-    right: -181px;
-    top: 16px;
-  }
 }
 
 .form__area {
@@ -364,7 +362,7 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0;
-    padding-top: 31px;
+    padding-top: 27px;
     margin: 0;
   }
 
@@ -569,7 +567,7 @@
   }
 
   .form__description {
-    padding-top: 30px;
+    padding-top: 56px;
     width: 100%;
     margin-bottom: 65px;
   }
