@@ -16,9 +16,19 @@ var include = require("posthtml-include");
 var del = require("del");
 var server = require("browser-sync").create();
 
-
-
 gulp.task("css", function () {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(rename("style.css"))
+    .pipe(gulp.dest("build/css"));
+});
+
+gulp.task("minify-css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -96,7 +106,7 @@ gulp.task("server", function () {
     ui: false*/
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*.less", gulp.series("css", "minify-css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
@@ -106,5 +116,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "webp", "images", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "minify-css", "webp", "images", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
